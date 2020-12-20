@@ -1,0 +1,33 @@
+
+
+{% extends 'uploads/base.html' %}
+
+{% block content %}
+
+    
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Data Criação</th>
+                <!--<th>Upload</th> -->
+                <th>Headline</th>
+                <th>Content</th>
+                <th>Reporter</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for arquivo in arquivos %}
+            <tr>
+                <td>{{arquivo.pub_date}}</td>
+                <td>{{arquivo.headline}}</td>
+                <td>{{arquivo.content}}</td>
+                <td>{{arquivo.reporter}}</td>
+                <!--<td><img src="{{arquivo.upload}}" alt=""></td> -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}
