@@ -1,0 +1,18 @@
+
+body{
+    background: blueviolet;
+    text-align: center;
+    font: normal 15pt Arial;
+    margin-top: 200px;
+}
+
+section{
+    
+    background: white;
+    border-radius: 30px; /* arrendonda as laterais */
+    padding: 15px; /* alarga as laterais */
+    width: 500px; /*500 px das laterias da pagina*/
+    margin: auto; /*Centraliza o conteudo*/
+    box-shadow: 5px 5px 5px rgb(112, 44, 44);
+    
+}
